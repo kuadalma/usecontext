@@ -1,11 +1,15 @@
-import './App.css'
+import { ShoppingProvider } from './ShoppingContext';
+import ShoppingList from './ShoppingList';
 
-function App() {
+const App = () => {
   return (
-    <>
-    
-    </>
-  )
-}
+    <ShoppingProvider>
+      <div>
+        <h1>Shopping List App</h1>
+        <ShoppingList />
+      </div>
+    </ShoppingProvider>
+  );
+};
 
-export default App
+export default App;
